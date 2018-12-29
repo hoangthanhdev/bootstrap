@@ -16,104 +16,111 @@
 	<script type="text/javascript" src="1.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-inverse" role="navigation">
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Start Bootstrap</a>
-		</div>
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav class="sidebar-wrapper">
+		<a id="nut-close" href="#" class="btn btn-light btn-lg"><i class="fa fa-times"></i></a>
+		<ul id="menu-close" class="list-group">
+            <li class="list-group-item sidebar-brand"><a href="#">Start Bootstrap</a></li>
+				<li class="list-group-item n1"><a href="#">Home</a></li>
+				<li class="list-group-item n2"><a href="#">About</a></li>
+				<li class="list-group-item n3"><a href="#">Service</a></li>
+				<li class="list-group-item n4"><a href="#">Portfolio</a></li>
+				<li class="list-group-item n5"><a href="#">Contact</a></li>
+	</ul>
+</nav>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse navbar-ex1-collapse">
-			<ul class="nav navbar-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li class="active"><a href="#">Service</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			
-		</div><!-- /.navbar-collapse -->
-	</div>
-</nav> <!-- end navbar -->
 <div class="container-fluid row1 text-center">
 	<h1>Start Bootstrap</h1>
 	<h3>Free Bootstrap Themes & Templates</h3>
 	<a href="#" class="btn btn-dark btn-lg">Find Out More</a>
 </div> <!-- end row1 -->
-<div class="container row2">
+<div class="container row2 text-center">
 	<h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-	<h3>This theme features some wonderful photography courtesy of Death to the Stock Photo.</h3>
+	<h3>This theme features some wonderful photography courtesy of <a href="#">Death to the Stock Photo.</a></h3>
 </div> <!-- end row2 -->
-<div class="container row3">
-	<div class="row">
+<div class="container-fluid row3 text-center">
 		<h2>Our Services</h2>
-		<hr>
-	</div>
-	<div class="row text-center">
-		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-			<i class="fa fa-cloud fa-5x text-primary"></i>
-			<h3>Service Name</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			<div class="btn btn-default">Learn More</div>
-		</div><!-- end col -->
-		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-			<i class="fa fa-compass fa-5x text-primary"></i>
-			<h3>Service Name</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			<div class="btn btn-default">Learn More</div>
-		</div><!-- end col -->
-		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-			<i class="fa fa-flask fa-5x text-primary"></i>
-			<h3>Service Name</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			<div class="btn btn-default">Learn More</div>
-		</div><!-- end col -->
-		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-			<i class="fa fa-shield-alt fa-5x text-primary"></i>
-			<h3>Service Name</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			<div class="btn btn-default">Learn More</div>
-		</div><!-- end col -->
+		<hr>	
+	<div class="container service">
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-push-1 col-lg-push-1">
+				<div class="row text-center">
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 name">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-cloud fa-stack-1x text-primary"></i>
+						</span>
+						<h3>Service Name</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div class="btn btn-default boder">Learn More</div>
+					</div><!-- end col -->
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 name">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-compass fa-stack-1x text-primary"></i>
+						</span>
+						<h3>Service Name</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div class="btn btn-default boder">Learn More</div>
+					</div><!-- end col -->
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 name">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-flask fa-stack-1x text-primary"></i>
+						</span>
+						<h3>Service Name</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div class="btn btn-default boder">Learn More</div>
+					</div><!-- end col -->
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 name">
+						<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-shield-alt fa-stack-1x text-primary"></i>
+						</span>
+						<h3>Service Name</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div class="btn btn-default boder">Learn More</div>
+					</div><!-- end col -->
+				</div>
+			</div>
+		</div>
 	</div> 
 </div> <!-- end row3 -->
-<div class="container row4 text-center">
-	<h1>Vertically Centered Text</h1>
+<div class="container-fulid row4 text-center">
+		<h1>Vertically Centered Text</h1>
 </div> <!-- end row4 -->
 <div class="container row5 text-center">
 	<h2>Our Work</h2>
 	<hr>
-	<div class="row">
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<img src="image/2.jpg" alt="" class="img-responsive">
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<img src="image/2.jpg" alt="" class="img-responsive">
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<img src="image/2.jpg" alt="" class="img-responsive">
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<img src="image/2.jpg" alt="" class="img-responsive">
+	<div class="row work">
+		<div class="col-md-10 col-lg-10 col-md-push-1 col-lg-push-1">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<img src="image/2.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<img src="image/2.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<img src="image/2.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<img src="image/2.jpg" alt="" class="img-responsive">
+				</div>
+			</div>
 		</div>
 	</div>
-	<a href="#" class="btn btn-dark">View More Items</a>
+	<a href="#" class="btn btn-dark boder btn-lg">View More Items</a>
 </div> <!-- end row5 -->
-<div class="container row6 text-center">
+<div class="container-fulid row6 text-center">
 	<h2>The buttons below are impossible to resist.</h2>
 	<ul class="list-inline">
-		<li><a href="#" class="btn btn-default">Click Me!</a></li>
-		<li><a href="#" class="btn btn-primary">Look at Me!</a></li>
+		<li><a href="#" class="btn btn-default boder btn-lg">Click Me!</a></li>
+		<li><a href="#" class="btn btn-primary boder btn-lg">Look at Me!</a></li>
 	</ul>
 </div> <!-- end row6 -->
-<div class="container-fluid map">
-	<h1>CHEN GOOGLE MAP</h1>
+<div class="container-fulid map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15676.107269175263!2d106.7266634358486!3d10.809257876787328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175263d580e4583%3A0x6d25e042c3aed063!2zVGjhuqNvIMSQaeG7gW4sIFF14bqtbiAyLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1546055338740" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div> <!-- end map -->
 <div class="container footer text-center">
 	<h2>Start Bootstrap</h2>

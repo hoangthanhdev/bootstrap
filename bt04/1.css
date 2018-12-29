@@ -1,5 +1,111 @@
 *{margin: 0;padding: 0}
 
+li.list-group-item {
+    border-radius: 0px !important;
+    background-color: #262626;
+    border: none;
+}
+
+li.list-group-item:hover {
+    background-color: #4e4d4dc4;
+    cursor: pointer;
+}
+
+li.list-group-item a {
+    color: #a5a3a3;
+}
+
+li.list-group-item a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+nav.sidebar-wrapper {
+    position: fixed;
+    top: 0px;
+    background-color: #262626;
+    width: 250px;
+    height: 100%;
+    transition: all 0.4s;
+    right: -250px;
+    z-index: 3;
+}
+nav.open{
+    right: 0px;
+}
+
+.row3 .name {
+    margin-bottom: 20px;
+}
+
+.row5 img {
+    margin-bottom: 25px;
+}
+
+.row5 img:hover {
+    opacity: 0.8;
+}
+
+.row5 hr {
+    margin: auto;
+    width: 10%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.row6 h2 {
+    margin-bottom: 21px;
+}
+
+.row6 {
+    background-color: #337AB7;
+    padding: 50px 0px;
+    color: white;
+}
+
+.row5 {
+    padding: 50px 0px;
+}
+
+.row5 .work {
+    margin: 20px 0;
+}
+
+.row4 h1 {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.row4 {
+    padding: 140px 0px;
+    background: url(image/callout.jpg) no-repeat center;
+    color: white;
+    background-size: cover;
+}
+
+.row3 .service {
+    margin-top: 35px;
+}
+
+.row3 h3 {
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.row2 h3 {
+    font-size: 20px;
+    color: #21202085;
+}
+
+.row2 {
+    padding: 75px 0px;
+}
+
+.row2 h2 {
+    font-weight: 600;
+}
+
 .row1 h3 {
     margin-bottom: 21px;
 }
@@ -17,14 +123,40 @@
     border-radius: 0px;
 }
 
+a#menu-toggle {
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    padding: 10px;
+}
+
+a#menu-toggle:hover {
+    background-color: #000000cc;
+    color: white;
+}
+
 nav.navbar.navbar-default.navbar-inverse {
     margin: 0px;
 }
 body {
     font-family: "Source Sans Pro",sans-serif;
-    font-weight: 700;
+}
+
+.row3 hr {
+    width: 5%;
+    margin: auto;
+}
+
+.row3 {
+    background-color: #337AB7;
+    padding: 55px 0px 35px 0px;
+    color: white;
 }
 .row1 {
     background: url(image/bg.jpg) no-repeat center;
     padding: 200px 0px;
+    background-size: cover;
+}
+.boder{
+    border-radius: 0px;
 }
