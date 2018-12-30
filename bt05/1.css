@@ -1,0 +1,215 @@
+*{margin: 0;padding: 0}
+
+.btn-send {
+    background-color: #18BC9C;
+    border: 0px;
+    padding: 15px 25px;
+}
+
+.btn.btn-primary.btn-send:hover {
+    background-color: #0d6352;
+}
+
+.form-control {
+    margin-bottom: 25px;
+    border: 0px solid;
+    border-bottom: 2px solid #c1c1c1;
+    border-radius: 0px;
+    padding: 30px 20px;
+    display: block;
+    font-size: 19px;
+    /* text-shadow: 0px 0px white; */
+}
+
+textarea.form-control {
+    color: #ACB6C0;
+}
+
+.portfolio {
+    padding: 90px 0px 110px 0px;
+}
+
+.footer {
+    padding: 30px 0px;
+    background-color: #233140;
+    color: white;
+    font-size: 17px;
+}
+
+.contact {
+    padding: 70px 0px 110px 0px;
+}
+
+.about {
+    background-color: #18BC9C;
+    padding: 70px 0px 100px 0px;
+    color: white;
+}
+
+.about h2 {
+    font-size: 45px;
+}
+
+.about .btn-down {
+    background-color: #18BC9C;
+    border: 2px solid white;
+    padding: 20px 35px;
+}
+
+a.btn.btn-default.btn-lg.btn-down:hover {
+    background-color: white;
+    transition: all 0.4s;
+}
+
+.about p {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.phongto {position: absolute;width: 100%;height: 100%;background-color: #18bc9cb3;top: 0px;left: 0px;opacity: 0;transition: all 0.4s;}
+
+.phongto i {
+    color: white;
+    padding: 106px;
+}
+
+.sanpham {
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.sanpham:hover .phongto {
+    opacity: 1;
+}
+
+.carousel p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.star {
+    height: 32px;
+    margin-top: 25px;
+}
+
+.star i {
+    background-color: #18BC9C;
+    width: 50px;
+    position: relative;
+    top: -38px;
+}
+
+.contact .star i {
+    background-color: white;
+}
+
+.portfolio .star i {
+    background-color: white;
+}
+
+hr.line {
+    width: 212px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom: 3px solid;
+}
+body{
+	font-family:Montserrat,sans-serif;
+}
+h1,h2,h3{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.info {
+    padding: 50px 0px 70px 0px;
+    background-color: #2C3E50;
+    color: white;
+}
+
+.info i {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    line-height: 44px;
+    margin-right: 9px;
+    cursor: pointer;
+}
+
+.info h3 {
+    margin-bottom: 32px;
+    font-size: 31px;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.portfolio h2 {
+    font-size: 45px;
+}
+
+.carousel h1 {
+    font-size: 73px;
+}
+.carousel {
+    padding: 150px 0px 100px 0px;
+    background-color: #18BC9C;
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-default .navbar-nav>li>a {color: white;font-size: 14px;}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: black;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #18BC9C;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #18BC9C;
+}
+
+.header {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #2C3E50;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    padding: 30px;
+    transition: all 0.4s;
+}
+
+.chuotrut {
+    padding: 15px;
+}
+
+.info i:hover {
+    background-color: white;
+    transition: all 0.5s;
+    color: #18BC9C;
+    border: 2px white;
+}
+@media (max-width: 768px){
+	.carousel h1{
+		font-size: 30px
+	}
+	.header{
+		padding: 5px
+	}
+	.navbar-default .navbar-brand{
+		font-size: 20px
+	}
+}
