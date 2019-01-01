@@ -1,0 +1,60 @@
+<?php
+ $str="https://archive.org/download/KRGhost/Ghost-01.mkv
+https://archive.org/download/KRGhost/Ghost-02.mkv
+https://archive.org/download/KRGhost/Ghost-03.mkv
+https://archive.org/download/KRGhost/Ghost-04.mkv
+https://archive.org/download/KRGhost/Ghost-05.mkv
+https://archive.org/download/KRGhost/Ghost-06.mkv
+https://archive.org/download/KRGhost/Ghost-07.mkv
+https://archive.org/download/KRGhost/Ghost-08.mkv
+https://archive.org/download/KRGhost/Ghost-09.mkv
+https://archive.org/download/KRGhost/Ghost-10.mkv
+https://archive.org/download/KRGhost/Ghost-11.mkv
+https://archive.org/download/KRGhost/Ghost-12.mkv
+https://archive.org/download/KRGhost/Ghost-13.mkv
+https://archive.org/download/KRGhost/Ghost-14.mkv
+https://archive.org/download/KRGhost/Ghost-15.mkv
+https://archive.org/download/KRGhost/Ghost-16.mkv
+https://archive.org/download/KRGhost/Ghost-17.mkv
+https://archive.org/download/KRGhost/Ghost-18.mkv
+https://archive.org/download/KRGhost/Ghost-19.mkv
+https://archive.org/download/KRGhost/Ghost-20.mkv
+https://archive.org/download/KRGhost/Ghost-21.mkv
+https://archive.org/download/KRGhost/Ghost-22.mkv
+https://archive.org/download/KRGhost/Ghost-23.mkv
+https://archive.org/download/KRGhost/Ghost-24.mkv
+https://archive.org/download/KRGhost/Ghost-25.mkv
+https://archive.org/download/KRGhost/Ghost-26.mkv
+https://archive.org/download/KRGhost/Ghost-27.mkv
+https://archive.org/download/KRGhost/Ghost-28.mkv
+https://archive.org/download/KRGhost/Ghost-29.mkv
+https://archive.org/download/KRGhost/Ghost-30.mkv
+https://archive.org/download/KRGhost/Ghost-31.mkv
+https://archive.org/download/KRGhost/Ghost-32.mkv
+https://archive.org/download/KRGhost/Ghost-33.mkv
+https://archive.org/download/KRGhost/Ghost-34.mkv
+https://archive.org/download/KRGhost/Ghost-35.mkv
+https://archive.org/download/KRGhost/Ghost-36.mkv
+https://archive.org/download/KRGhost/Ghost-37.mkv
+https://archive.org/download/KRGhost/Ghost-38.mkv
+https://archive.org/download/KRGhost/Ghost-39.mkv
+https://archive.org/download/KRGhost/Ghost-40.mkv
+https://archive.org/download/KRGhost/Ghost-41.mkv
+https://archive.org/download/KRGhost/Ghost-42.mkv
+https://archive.org/download/KRGhost/Ghost-43.mkv
+https://archive.org/download/KRGhost/Ghost-44.mkv
+https://archive.org/download/KRGhost/Ghost-45.mkv
+https://archive.org/download/KRGhost/Ghost-46.mkv
+https://archive.org/download/KRGhost/Ghost-47.mkv
+https://archive.org/download/KRGhost/Ghost-48.mkv
+https://archive.org/download/KRGhost/Ghost-49.mkv
+https://archive.org/download/KRGhost/Ghost-50.mkv";
+$arr = explode('
+', $str);
+$json=json_encode($arr);
+?>
+<pre>
+	<?php print_r($arr); ?>
+</pre><br>
+<?php echo $json;?>
+<?php var_dump(json_decode($json)); ?>
