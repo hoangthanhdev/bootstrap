@@ -46,7 +46,7 @@
  			<div class="container text-center">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<a class="afterglow" href="#myvideo">Launch lightbox</a>
+						
 					 	<video id="myvideo" width="1280" height="720">
 					      <source type="video/mp4" src="https://ia902807.us.archive.org/12/items/KamenRiderXKamenRiderWDecadeMovieWars2010/Kamen%20Rider%20%C3%97%20Kamen%20Rider%20W%20%26%20Decade%20-%20Movie%20Wars%202010.mp4"/>
 					      <div style="float: left;">adadsd</div>

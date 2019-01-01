@@ -1,0 +1,3 @@
+<video class="afterglow video" id="myvideo" width="1280" height="720" poster="https://1.bp.blogspot.com/-wcd0TTzi44k/W2bbp5y5_iI/AAAAAAAA5kk/r3dcoVS7v0EA-EqjvHVgk_DUpRL4Wnt0ACLcBGAs/s1600/38289228_2197248486970753_4030785322206887936_o.jpg">
+      <source type="video/mp4" src="https://ia902807.us.archive.org/12/items/KamenRiderXKamenRiderWDecadeMovieWars2010/Kamen%20Rider%20%C3%97%20Kamen%20Rider%20W%20%26%20Decade%20-%20Movie%20Wars%202010.mp4"" />
+</video>
