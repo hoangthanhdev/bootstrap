@@ -1,12 +1,18 @@
-<li class="active"><a href="#">Thể loại</a></li>
-<li><a href="#">Quốc Gia</a></li>
-<li><a href="#">Phim lẻ Siêu Nhân</a></li>
 <li class="dropdown">
-	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Phim bộ Siêu Nhân<b class="caret"></b></a>
+	<a href="/the-loai" class="dropdown-toggle" data-toggle="dropdown">Thể Loại<b class="caret"></b></a>
 	<ul class="dropdown-menu">
-		<li><a href="#"><i class="fas fa-caret-right"></i>Action</a></li>
-		<li><a href="#"><i class="fas fa-caret-right"></i>Another action</a></li>
-		<li><a href="#"><i class="fas fa-caret-right"></i>Something else here</a></li>
-		<li><a href="#"><i class="fas fa-caret-right"></i>Separated link</a></li>
+		<?php while($row_menu_con1 = $result_menu_con1->fetch_assoc()){?>
+			<li><a href="<?php echo $row_menu_con1["slug"];?>"><i class="fas fa-caret-right"></i><?php echo $row_menu_con1["name"];?></a></li>
+		<?php }?>
 	</ul>
 </li>
+<li class="dropdown">
+	<a href="/the-loai" class="dropdown-toggle" data-toggle="dropdown">Thể Loại<b class="caret"></b></a>
+	<ul class="dropdown-menu">
+		<?php while($row_menu_con2 = $result_menu_con2->fetch_assoc()){?>
+			<li><a href="<?php echo $row_menu_con1["slug"];?>"><i class="fas fa-caret-right"></i><?php echo $row_menu_con2["name"];?></a></li>
+		<?php }?>
+	</ul>
+</li>
+<li><a href="/sieu-nhan-phim-le"><li><a href="#">Phim lẻ Siêu Nhân</a></li></a></li>
+<li><a href="/sieu-nhan-phim-bo"><li><a href="#">Phim Bộ Siêu Nhân</a></li></a></li>

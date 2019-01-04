@@ -17,27 +17,6 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<style type="text/css">
-			/* Change all text and icon colors in the player. */
-.vjs-matrix.video-js {
-  color: #00ff00;
-}
-
-/* Change the border of the big play button. */
-.vjs-matrix .vjs-big-play-button {
-  border-color: #00ff00;
-}
-
-/* Change the color of various "bars". */
-.vjs-matrix .vjs-volume-level,
-.vjs-matrix .vjs-play-progress,
-.vjs-matrix .vjs-slider-bar {
-  background: #00ff00;
-}
-.bg{
-	background-color: #000;
-}
-		</style>
 		<script type="text/javascript">
 			var player = videojs('my-player');
 

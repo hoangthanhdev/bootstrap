@@ -9,8 +9,8 @@
 <div class="container view">
 	<div class="row tieude">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h1><a href="#" title="dad">The Old Man & the Gun dựa trên câu chuyện có thật của Forrest</a></h1>
-			<h2>The Old Man & the Gun</h2>
+			<h1><a href="/<?php echo $row_phim["post_name"];?>" title="<?php echo $row_phim["post_title"];?>"><?php echo $row_phim["post_title"];?></a></h1>
+			<h2>Số tập: <?php echo $row_phim_ct["meta_value"];?></h2>
 		</div>
 	</div> <!-- end tieu de -->
 	<div class="row">
