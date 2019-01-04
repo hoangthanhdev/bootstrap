@@ -18,6 +18,7 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<script type="text/javascript">
+			var Vue = require('vue');
 			var player = videojs('my-player');
 
 			player.addClass('vjs-matrix');

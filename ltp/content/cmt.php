@@ -19,6 +19,6 @@
 
 <!-- Your embedded comments code -->
 <div id="content-comment">
-    <div class="fb-comments" data-href="https://lytaphim.com/kamen-rider-zi-o.html" data-numposts="5" data-order-by="reverse_time" data-width="100%" colorscheme="dark" data-colorscheme="dark"></div>
+    <div class="fb-comments" data-href="https://lytaphim.com/<?php echo $row_phim["post_name"];?>.html" data-numposts="5" data-order-by="reverse_time" data-width="100%" colorscheme="dark" data-colorscheme="dark"></div>
 </div>
 <div id="fb-root"></div>

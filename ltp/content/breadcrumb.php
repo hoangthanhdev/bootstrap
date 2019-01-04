@@ -1,5 +1,4 @@
-<?php $ID=$_GET['ID'];
-	echo "ID= ".$ID;
+<?php 
 $sql_phim = "
 SELECT
 	ID,

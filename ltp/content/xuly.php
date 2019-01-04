@@ -15,3 +15,6 @@ $arr = explode('
 $json=json_encode($arr);
 $count_arr=count($arr);
 ?>
+<!-- <pre>
+	<?php print_r($arr);?>
+</pre> -->

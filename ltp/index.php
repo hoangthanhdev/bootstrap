@@ -1,3 +1,6 @@
+<?php require_once "db/db.php";
+$ID=$_GET['ID'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +17,7 @@
 	<script type="text/javascript" src="1.js"></script>
 </head>
 <body>
-<?php require_once "db/db.php"; ?>
+
 <?php require_once "header/menu.php"; ?>
 <?php require_once "content/content.php"; ?>
 <?php require_once "footer/footer.php"; ?>
