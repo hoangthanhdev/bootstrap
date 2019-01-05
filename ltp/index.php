@@ -1,5 +1,10 @@
 <?php require_once "db/db.php";
+if(isset($_GET['ID'])){
 $ID=$_GET['ID'];
+}else{
+	header('Location: https://lytaphim.net/');
+}
+$link = 'http://'.$_SERVER['HTTP_HOST'].'/ltp/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +18,10 @@ $ID=$_GET['ID'];
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script> <!-- trinh doc video -->
-	<link rel="stylesheet" href="1.css">
-	<script type="text/javascript" src="1.js"></script>
+	<link rel="stylesheet" href="<?php echo $link;?>1.css">
+	<script type="text/javascript" src="<?php echo $link;?>1.js"></script>
 </head>
 <body>
-
 <?php require_once "header/menu.php"; ?>
 <?php require_once "content/content.php"; ?>
 <?php require_once "footer/footer.php"; ?>

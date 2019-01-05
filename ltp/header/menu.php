@@ -19,12 +19,12 @@
 						<ul class="nav navbar-nav">
 							<?php require_once "link-menu.php"; ?>
 						</ul>
-						<div class="nav navbar-nav navbar-right search">
-						        <div class="searchbar">
-						          <input class="search_input" type="text" name="" placeholder="Nhập tên phim ...">
-						          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-						        </div>
-						</div>
+<!-- 						<div class="nav navbar-nav navbar-right search">
+        <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Nhập tên phim ...">
+          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+</div> -->
 					</div><!-- /.navbar-collapse -->
 				</div>
 			</nav> <!-- end menu -->
