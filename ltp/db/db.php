@@ -38,10 +38,13 @@ AND (
 )";
 $result_menu_cha = $conn->query($sql_menu_cha);*/
 $URI= $_SERVER["REQUEST_URI"];
+if(isset($_GET['tap'])){
 $tap=$_GET['tap'];
+$URI = str_replace("/tap-$tap/","",$URI);
+}
 $URI = str_replace(".html","",$URI);
 $URI = str_replace("/ltp/","",$URI);
-$URI = str_replace("/tap-$tap/","",$URI);
+
 $sql_url = "
 SELECT
 	ID,
