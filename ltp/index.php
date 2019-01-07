@@ -1,8 +1,8 @@
 <?php require_once "db/db.php";
-if(isset($_GET['ID'])){
-$ID=$_GET['ID'];
+if($name_url){
+	$ID= $name_id;
 }else{
-	header('Location: https://lytaphim.net/');
+	header('Location: https://lytaphim.net/404');
 }
 $link = 'http://'.$_SERVER['HTTP_HOST'].'/ltp/';
 ?>

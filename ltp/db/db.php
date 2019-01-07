@@ -37,6 +37,20 @@ AND (
 	OR ta.term_id = '58'
 )";
 $result_menu_cha = $conn->query($sql_menu_cha);*/
+$URI= $_SERVER["REQUEST_URI"];
+$tap=$_GET['tap'];
+$URI = str_replace(".html","",$URI);
+$URI = str_replace("/ltp/","",$URI);
+$URI = str_replace("/tap-$tap/","",$URI);
+$sql_url = "
+SELECT
+	ID,
+	post_name
+FROM
+	wp_posts
+WHERE
+	post_name = '$URI'";
+$result_url = $conn->query($sql_url);
 
 $sql_menu_con1 = "
 SELECT
@@ -80,6 +94,10 @@ $row_cnt = $result->num_rows;
 /*while($row = $result_menu_con1->fetch_assoc()) {
         echo "name: " . $row["name"]. "<br>";
     }*/
-
-
+$row_url = $result_url->fetch_assoc();
+$name_url= $row_url["post_name"];
+$name_id= $row_url["ID"];
+/*echo $URI." - ";
+echo $name_url." - ";
+echo $name_id." - ";*/
 ?>
