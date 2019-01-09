@@ -103,4 +103,26 @@ $name_id= $row_url["ID"];
 /*echo $URI." - ";
 echo $name_url." - ";
 echo $name_id." - ";*/
+
+$sql_title = "
+SELECT *
+FROM
+	`wp_postmeta`
+WHERE
+	`post_id` = $name_id
+AND `meta_key`='_aioseop_title'";
+$result_title = $conn->query($sql_title);
+$row_title = $result_title->fetch_assoc();
+$title= $row_title['meta_value']; /*title phim*/
+
+$sql_des = "
+SELECT *
+FROM
+	`wp_postmeta`
+WHERE
+	`post_id` = $name_id
+AND `meta_key`='_aioseop_description'";
+$result_des = $conn->query($sql_des);
+$row_des = $result_des->fetch_assoc();
+$des= $row_des['meta_value']; /*des phim*/
 ?>
