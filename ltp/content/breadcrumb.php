@@ -25,5 +25,5 @@ $row_phim_ct = $result_phim_ct->fetch_assoc();
 ?>
 <ol class="breadcrumb" id="xem">
     <li class="breadcrumb-item"><a href="https://lytaphim.com/" target="_plank">Trang Chủ</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
-    <li class="breadcrumb-item active"><?php echo $row_phim["post_title"];?> - <?php echo $row_phim["post_name"];?></li>
+    <li class="breadcrumb-item active"><?php echo $row_phim["post_title"];?></li>
 </ol>

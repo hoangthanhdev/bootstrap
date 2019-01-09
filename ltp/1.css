@@ -1,5 +1,10 @@
 *{margin: 0;padding: 0}
 
+.vjs-afterglow-skin .vjs-poster{
+  opacity: 0.6;
+  transition:all 0.4s;
+}
+
 .footer {
     background-color: black;
     padding: 40px 0px;

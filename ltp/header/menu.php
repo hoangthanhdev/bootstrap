@@ -28,6 +28,6 @@
 					</div><!-- /.navbar-collapse -->
 				</div>
 			</nav> <!-- end menu -->
-<div class="container text-center">
+<!-- <div class="container text-center">
 	<img src="https://www.thuvienaz.net/wp-content/themes/dooplay/images/banner-home.jpg" alt="" class="img-responsive">
-</div>
+</div> -->
