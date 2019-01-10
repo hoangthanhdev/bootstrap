@@ -11,10 +11,10 @@ $link = 'http://'.$_SERVER['HTTP_HOST'].'/ltp/';
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php echo $title;?></title>
+	<title><?php echo $title;?> - Lyta Phim</title>
 	<meta name="description"  content="<?php echo $des;?>" />
 
-	<link rel="canonical" href="https://lytaphim.net/" />
+	<link rel="canonical" href="<?php echo $link.$name_url.".html";?>" />
 	<link rel="shortcut icon" href="https://lytaphim.com/wp-content/uploads/2013/11/favicon.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

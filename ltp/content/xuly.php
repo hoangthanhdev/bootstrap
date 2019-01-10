@@ -14,6 +14,7 @@ $arr = explode('
 ', $str);
 $json=json_encode($arr);
 $count_arr=count($arr); /*lay soure link goc*/
+/*echo "<pre>".print_r($json)."</pre>";*/
 
 $sql_so_tap = "
 SELECT *
@@ -60,7 +61,9 @@ $row_ok_raw = $result_ok_raw->fetch_assoc();
 $ok_raw= $row_ok_raw['meta_value']; /*lay ban phim*/
 if($ok_raw=="delay"){
 	$ok_raw="Hoãn";
-}else{
+}elseif($ok_raw=="raw"){
 	$ok_raw="Raw";
+}else{
+	$ok_raw="Vietsub";
 }
 ?>

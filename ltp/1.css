@@ -1,4 +1,13 @@
 *{margin: 0;padding: 0}
+.vjs-loading-spinner{
+/* border: 3px solid red !important;
+border-top: 3px rgba(27, 0, 253, 0.95) solid !important; */
+border:5px solid rgba(39, 38, 38, 0.73) !important;
+border-top: 5px rgba(255,255,255,.95) solid !important; 
+
+width: 50px !important;
+height: 50px !important;
+}
 
 .tieude {
     padding-bottom: 15px;
@@ -289,10 +298,18 @@ body {
    }
    .tieude h1 {
     font-size: 15px;
+    line-height: 20px;
    }
    .tieude h2{
     font-size: 20px;
    }
+   .alert-info{
+    font-size: 13px;
+   }
+  .vjs-loading-spinner{
+    width: 30px !important;
+    height: 30px !important;
+  }
 }
 @media (max-width: 991px) {
   .navbar-header {
