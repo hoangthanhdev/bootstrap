@@ -41,10 +41,12 @@ if (isset($_GET['name'])) {
 }else{
 	$data_name=NULL;
 }
+$base="http://".$_SERVER['SERVER_NAME'].":8080/ltp-2/";
 ?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+	<base href="<?php echo $base;?>" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php if(isset($PhimTile)){echo $PhimTile;}else echo("Trang chủ")?> - Lyta Phim</title>

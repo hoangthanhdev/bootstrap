@@ -56,8 +56,8 @@ if ($data_server==1) {
 <div class="row server">
 	<div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-sm-push-2 col-md-push-3 col-lg-push-4">
 		<div class="btn-group btn-group-lg">
-		    <a href="?view=xem&name=<?php echo $data_name;?>&tap=<?php echo $tap;?>&server=1" title="Server 1" class="btn btn-primary <?php if($data_server==1) echo "disabled"?>"><?php if($data_server==1) echo "Bạn đang xem - "?>Server 1</a>
-		    <a href="?view=xem&name=<?php echo $data_name;?>&tap=<?php echo $tap;?>&server=2" title="Server 2" class="btn btn-primary <?php if($data_server==2) echo "disabled"?>"><?php if($data_server==2) echo "Bạn đang xem - "?>Server 2</a>
+		    <a href="xem/<?php echo $data_name;?>.html/<?php echo $tap;?>&server=1" title="Server 1" class="btn btn-primary <?php if($data_server==1) echo "disabled"?>"><?php if($data_server==1) echo "Bạn đang xem - "?>Server 1</a>
+		    <a href="xem/<?php echo $data_name;?>.html/<?php echo $tap;?>&server=2" title="Server 2" class="btn btn-primary <?php if($data_server==2) echo "disabled"?>"><?php if($data_server==2) echo "Bạn đang xem - "?>Server 2</a>
 		  </div>
 	</div>
 </div>
