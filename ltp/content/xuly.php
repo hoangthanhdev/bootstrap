@@ -16,6 +16,21 @@ $json=json_encode($arr);
 $count_arr=count($arr); /*lay soure link goc*/
 /*echo "<pre>".print_r($json)."</pre>";*/
 
+$sql_phim_server_1 = "
+SELECT *
+FROM
+	`wp_postmeta`
+WHERE
+	`post_id` = $ID
+AND `meta_key`='server_1'";
+$result_phim_server_1 = $conn->query($sql_phim_server_1);
+$row_phim_server_1 = $result_phim_server_1->fetch_assoc();
+$str_server_1 = $row_phim_server_1['meta_value'];
+
+$server_1 = explode('
+', $str_server_1);
+/*echo "<pre>".print_r($server_1)."</pre>";*/
+
 $sql_so_tap = "
 SELECT *
 FROM
