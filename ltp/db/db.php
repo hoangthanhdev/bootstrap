@@ -104,6 +104,12 @@ $name_id= $row_url["ID"];
 echo $name_url." - ";
 echo $name_id." - ";*/
 
+if($name_url){
+	$ID= $name_id;
+}else{
+	header('Location: https://lytaphim.net/404');
+}
+
 $sql_title = "
 SELECT *
 FROM

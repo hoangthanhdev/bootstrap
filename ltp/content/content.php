@@ -20,7 +20,7 @@
 <div class="container info">
 	<div class="row tieude">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h1><?php echo $row_phim["post_title"]." - Tập ".$tap;?></h1>
+			<h1><?php echo $row_phim["post_title"];?> <?php if($count_arr>1){ echo " - Tập ".$tap;}?></h1>
 			<!-- <p>Số tập: <?php echo $row_phim_ct["meta_value"];?></p> -->
 			<div class="row">
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
