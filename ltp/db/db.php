@@ -41,9 +41,14 @@ $URI= $_SERVER["REQUEST_URI"];
 if(isset($_GET['tap'])){
 $tap=$_GET['tap'];
 $URI = str_replace("/tap-$tap/","",$URI);
+$URI = str_replace("/tap-$tap","",$URI);
 }
 $URI = str_replace(".html","",$URI);
 $URI = str_replace("/ltp/","",$URI);
+$URI = str_replace("s1","",$URI);
+$URI = str_replace("s2","",$URI);
+$URI = str_replace("s3","",$URI);
+$URI = str_replace("s4","",$URI);
 
 $sql_url = "
 SELECT

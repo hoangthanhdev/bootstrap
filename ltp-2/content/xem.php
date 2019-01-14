@@ -4,8 +4,7 @@
 		<?php require_once "content/breadcrumb.php"; ?>
 		</div>
 	</div>
-</div>
-<!-- end breadcrumb -->
+</div><!-- end breadcrumb -->
 <div class="container view">
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -15,28 +14,12 @@
 </div>
 <!-- end view -->
 <div class="container text-center">
-	<img src="https://www.thuvienaz.net/wp-content/themes/dooplay/images/banner-home.jpg" alt="" class="img-responsive">
-</div>
+	<?php include "ads/ads-content.php";?>
+</div> <!-- end ads content -->
 <div class="container info">
 	<div class="row tieude">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h1><?php echo $row_phim["post_title"];?> <?php if($count_arr>1){ echo " - Tập ".$tap;}?></h1>
-			<!-- <p>Số tập: <?php echo $row_phim_ct["meta_value"];?></p> -->
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<div class="alert alert-info"><span class="bold">Cập nhật:</span> 
-						<?php if($count_arr>1){?>
-						Tập <?php echo $so_tap." - ";?>
-						<?php }?>
-						<?php echo "Bản ".$ok_raw;?>
-						<?php if($chat_luong_new!=NULL) {echo " - Chất lượng: ".$chat_luong_new;}?>
-					</div>
-				</div>
-			</div>
-			
-		</div>
+		<?php require_once "content/info.php"; ?>
 	</div> <!-- end tieu de -->
-<?php if($count_arr>1){?>
 	<div class="line">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -44,7 +27,6 @@
 			</div>
 		</div> <!-- end ct -->
 	</div>
-<?php }?>
 	<div class="line">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
