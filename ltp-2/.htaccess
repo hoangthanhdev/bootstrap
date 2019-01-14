@@ -1,13 +1,16 @@
 RewriteEngine On
 
+# force ssl
+# RewriteCond %{SERVER_PORT} ^80$
+# RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+
 RewriteCond %{HTTP_HOST} ^www.lytaphim.net
-RewriteRule (.*) http://lytaphim.net/$1 [R=301,L]
+RewriteRule (.*) https://lytaphim.net/$1 [R=301,L]
 
-RewriteCond %{HTTP_HOST} ^http://lytaphim.net/index.php
-RewriteRule (.*) http://lytaphim.net/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^.*/index\.php 
+RewriteRule ^(.*)index.php$ /$1 [R=301,L] 
 
+RewriteRule ^404.html$ index.php?view=404 [L]
 
-RewriteRule ^capnhatngay/(.*)/$ bds/bds_update.php?idBds=$1 [L]
 RewriteRule ^xem/(.*).html$ index.php?view=xem&name=$1 [L]
 RewriteRule ^xem/(.*).html/(.*)$ index.php?view=xem&name=$1&tap=$2 [L]
-RewriteRule ^xem/(.*).html/(.*)/sv(.*)$ index.php?view=xem&name=$1&tap=$2&server=$3 [L]

@@ -86,6 +86,28 @@ class phim extends db{
 		AND `meta_key`='img_movie'";
 		$kq = mysqli_query($this->conn,$sql) or die(mysqli_error());
 		return $kq;
-	}//Lay Phim Server 2
+	}//Lay Img Phim SV2
+
+	public function PhienBan($IdPhim){
+		$sql="SELECT *
+		FROM
+			`wp_postmeta`
+		WHERE
+			`post_id` = '$IdPhim'
+		AND `meta_key`='ok_raw'";
+		$kq = mysqli_query($this->conn,$sql) or die(mysqli_error());
+		return $kq;
+	}//Lay Phien Ban Phim SV2
+
+	public function ChatLuong($IdPhim){
+		$sql="SELECT *
+		FROM
+			`wp_postmeta`
+		WHERE
+			`post_id` = '$IdPhim'
+		AND `meta_key`='chat-luong_new'";
+		$kq = mysqli_query($this->conn,$sql) or die(mysqli_error());
+		return $kq;
+	}//Lay Phien Ban Phim SV2
 }
 ?>

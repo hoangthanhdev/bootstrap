@@ -20,6 +20,7 @@
 	<div class="row tieude">
 		<?php require_once "content/info.php"; ?>
 	</div> <!-- end tieu de -->
+	<?php if ($SoTap>1) {?>
 	<div class="line">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -27,6 +28,7 @@
 			</div>
 		</div> <!-- end ct -->
 	</div>
+	<?php }?>
 	<div class="line">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

@@ -20,6 +20,11 @@ if (isset($_GET['name'])) {
 	$LayInfo=$d->LayInfo($data_name);
 	$row_LayInfo=mysqli_fetch_assoc($LayInfo);
 	$IdPhim=$row_LayInfo['ID']; /*lay id phim*/
+	$NamePhim=$row_LayInfo['post_name']; /*lay name phim*/
+
+	if($NamePhim!=$data_name){
+		header('Location: /404.html');
+	}
 
 	$PhimTile=$p->PhimTile($IdPhim);
 	$row_PhimTile=mysqli_fetch_assoc($PhimTile);
@@ -38,10 +43,25 @@ if (isset($_GET['name'])) {
 	$row_SoTap=mysqli_fetch_assoc($SoTap);
 	$SoTap=$row_SoTap['meta_value'];/*lay Phim Des*/
 
+	$PhienBan=$p->PhienBan($IdPhim);
+	$row_PhienBan=mysqli_fetch_assoc($PhienBan);
+	$PhienBan=$row_PhienBan['meta_value'];/*lay Chat Luong Phim*/
+	if($PhienBan=='ok'){$PhienBan=' - Vietsub';}
+	elseif($PhienBan=='raw'){$PhienBan=' - Raw';}
+	elseif($PhienBan=='delay'){$PhienBan=' - Hoãn';}
+
+	$ChatLuong=$p->ChatLuong($IdPhim);
+	$row_ChatLuong=mysqli_fetch_assoc($ChatLuong);
+	$ChatLuong=$row_ChatLuong['meta_value'];/*lay Chat Luong Phim*/
+	if($ChatLuong=='Cam'){$ChatLuong=' - Bản Cam';}
+	elseif($ChatLuong=='SD'){$ChatLuong=' - Bản SD';}
+	elseif($ChatLuong=='HD'){$ChatLuong=' - Bản HD';}
+	elseif($ChatLuong==NULL){$ChatLuong=NULL;}
 }else{
 	$data_name=NULL;
 }
-$base="http://".$_SERVER['SERVER_NAME'].":8080/ltp-2/";
+/*$base="http://".$_SERVER['SERVER_NAME'].":8080/ltp-2/";*/
+$base="http://".$_SERVER['SERVER_NAME']."/ltp-2/";
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -61,12 +81,14 @@ $base="http://".$_SERVER['SERVER_NAME'].":8080/ltp-2/";
   <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script> <!-- trinh doc video -->
 	<link rel="stylesheet" href="1.css">
 	<script type="text/javascript" src="1.js"></script>
+	<?php require_once "code.php"; ?>
 </head>
 <body>
 <?php require_once "header/header.php"; ?>
-<?php if($view==''){ include "content/home.php";}?>
-<?php	if($view=='xem') include "content/xem.php";
-		/*elseif($view=='page')	include "content/page.php";*/
+<?php 	if($view=='') 		 include "content/construction.php";
+		elseif($view=='ok')  include "content/home.php";
+		elseif($view=='xem') include "content/xem.php";
+		elseif($view=='404') include "content/404.php";
 ?>       
 <?php require_once "footer/footer.php"; ?>
 </body>

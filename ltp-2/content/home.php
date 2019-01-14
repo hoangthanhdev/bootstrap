@@ -15,13 +15,12 @@
 			<?php while($row_PhimDuyet=mysqli_fetch_assoc($PhimDuyet)) {?>
 			      <tr>
 			        <td><?php echo $row_PhimDuyet['post_title'];?></td>
-			        <td><a href="?view=xem&name=<?php echo $row_PhimDuyet['post_name']?>" target="_blank">Vào xem</a> </td>
-			        <td><a href="#">Click Download</a></td>
+			        <td><a href="xem/<?php echo $row_PhimDuyet['post_name']?>.html" target="_blank">Vào xem</a> </td>
+			        <td><a href="#">Đang cập nhật ...</a></td>
 			      </tr>
 			<?php }?>
 			    </tbody>
 			  </table>
-
 		</div>
 	</div>
 </div>

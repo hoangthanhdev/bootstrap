@@ -42,8 +42,8 @@ if ($data_server==1) {
 		  <source type="video/mp4" src="<?php echo $hd;?>" />
 		<?php }?> 
 		</video>
-		<?php if ($count_Sv2>=$tap) {echo "HD= ".$hd."<br> SD= ".$sd;}?>
-		<?php if($count_Sv2<$tap){echo "<p class='text-center'>Phim đang được cập nhật. Vui lòng quay lại sau</p>";}?>
+		<!-- <?php if ($count_Sv2>=$tap) {echo "HD= ".$hd."<br> SD= ".$sd;}?> -->
+		<?php if($count_Sv2<$tap){echo "<p class='text-center'>Phim đang được cập nhật. Bạn vui lòng quay lại sau. Cám ơn</p>";}?>
 	<?php } ?>
 	<?php if($data_server==1){?>
 		<div class="embed-responsive embed-responsive-16by9">
