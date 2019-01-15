@@ -69,10 +69,14 @@ $base="http://".$_SERVER['SERVER_NAME']."/ltp-2/";
 	<base href="<?php echo $base;?>" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php if(isset($PhimTile)){echo $PhimTile;}else echo("Trang chủ")?> - Lyta Phim</title>
-	<meta name="description"  content='<?php if(isset($PhimDes)){echo $PhimDes;}else echo("Des trang chủ Lyta Phim") ?>' />
-
-	<!-- <link rel="canonical" href="<?php echo $link.$name_url.".html";?>" /> -->
+	<title><?php if(isset($PhimTile)){echo $PhimTile;}else echo("Xem phim online miễn phí - không quảng cáo - link nhanh nhất | Lyta Phim")?></title>
+	<meta name="description"  content='<?php if(isset($PhimDes)){echo $PhimDes;}else echo("Lyta Phim nơi xem phim online miễn phí KHÔNG quảng cáo phản cảm, KHÔNG popup, Link Youtube nhanh KHÔNG cần chờ đợi. Lyta Phim thỏa sức đam mê của bạn.") ?>' />
+	
+	<?php 	if($view==''){?>
+		<link rel="canonical" href="<?php echo $base;?>" />
+	<?php }elseif($view=='xem'){?>
+		<link rel="canonical" href="<?php echo $base.'xem/'.$data_name.'.html';?>" />
+	<?php }?>
 	<link rel="shortcut icon" href="https://lytaphim.com/wp-content/uploads/2013/11/favicon.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -85,8 +89,8 @@ $base="http://".$_SERVER['SERVER_NAME']."/ltp-2/";
 </head>
 <body>
 <?php require_once "header/header.php"; ?>
-<?php 	if($view=='') 		 include "content/construction.php";
-		elseif($view=='ok')  include "content/home.php";
+<?php 	if($view=='') 		 include "content/home.php";
+		/*elseif($view=='ok')  include "content/home.php";*/
 		elseif($view=='xem') include "content/xem.php";
 		elseif($view=='404') include "content/404.php";
 ?>       

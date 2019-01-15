@@ -28,7 +28,8 @@
 				post_name,
 				post_title,
 				meta_key,
-				meta_value
+				meta_value,
+				post_modified
 			FROM
 				wp_postmeta mt, wp_posts pt
 			WHERE

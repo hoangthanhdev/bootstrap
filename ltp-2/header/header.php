@@ -13,7 +13,7 @@
 								<img src="https://www.thuvienaz.net/wp-content/uploads/2018/07/logo.png" alt="">
 							</a>				
 						</div>-->
-						<a class="navbar-brand" href="#">LYTA PHIM</a>
+						<a class="navbar-brand" href="" title="Lyta Phim" target="_blank">LYTA PHIM</a>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -29,6 +29,6 @@
 					</div><!-- /.navbar-collapse -->
 				</div>
 			</nav> <!-- end menu -->
-<!-- <div class="container text-center">
-	<img src="https://www.thuvienaz.net/wp-content/themes/dooplay/images/banner-home.jpg" alt="" class="img-responsive">
-</div> -->
+<div class="container text-center">
+	<?php include "ads/ads-top.php";?>
+</div>
