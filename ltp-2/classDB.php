@@ -36,7 +36,8 @@
 			meta_key = 'new_site'
 			AND meta_value = '1'
 			AND mt.post_id = pt.ID
-			AND post_status='publish'";
+			AND post_status='publish'
+			ORDER BY post_modified DESC";
 		$kq = mysqli_query($this->conn,$sql) or die(mysqli_error());
 		return $kq;
 	}//Phim Duyet

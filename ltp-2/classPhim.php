@@ -66,6 +66,17 @@ class phim extends db{
 		return $kq;
 	}//Lay Phim Server 1
 
+	public function Noidung($IdPhim){
+		$sql="SELECT *
+		FROM
+			`wp_postmeta`
+		WHERE
+			`post_id` = '$IdPhim'
+		AND `meta_key`='noi_dung'";
+		$kq = mysqli_query($this->conn,$sql) or die(mysqli_error());
+		return $kq;
+	}//Lay Phim Server 1
+
 	public function Sv2($IdPhim){
 		$sql="SELECT *
 		FROM
@@ -106,6 +117,17 @@ class phim extends db{
 		WHERE
 			`post_id` = '$IdPhim'
 		AND `meta_key`='chat-luong_new'";
+		$kq = mysqli_query($this->conn,$sql) or die(mysqli_error());
+		return $kq;
+	}//Lay Phien Ban Phim SV2
+
+	public function Trailer($IdPhim){
+		$sql="SELECT *
+		FROM
+			`wp_postmeta`
+		WHERE
+			`post_id` = '$IdPhim'
+		AND `meta_key`='trailer'";
 		$kq = mysqli_query($this->conn,$sql) or die(mysqli_error());
 		return $kq;
 	}//Lay Phien Ban Phim SV2

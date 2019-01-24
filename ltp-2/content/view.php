@@ -42,7 +42,6 @@ if ($data_server==1) {
 		  <source type="video/mp4" src="<?php echo $hd;?>" />
 		<?php }?> 
 		</video>
-		<!-- <?php if ($count_Sv2>=$tap) {echo "HD= ".$hd."<br> SD= ".$sd;}?> -->
 		<?php if($count_Sv2<$tap){echo "<p class='text-center'>Phim đang được cập nhật. Bạn vui lòng quay lại sau. Cám ơn</p>";}?>
 	<?php } ?>
 	<?php if($data_server==1){?>
