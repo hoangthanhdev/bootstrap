@@ -8,7 +8,7 @@
 <div class="container view">
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<?php require_once "content/tab2.php"; ?>
+			<?php require_once "content/tab.php"; ?>
 		</div>
 	</div>
 </div>

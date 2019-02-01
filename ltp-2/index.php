@@ -82,7 +82,9 @@ $base="http://".$_SERVER['SERVER_NAME']."/ltp-2/";
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<?php if($data_server==2) {?>
   <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script> <!-- trinh doc video -->
+<?php }?>
 	<link rel="stylesheet" href="1.css">
 	<script type="text/javascript" src="1.js"></script>
 	<?php require_once "code.php"; ?>

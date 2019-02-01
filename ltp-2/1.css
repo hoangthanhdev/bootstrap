@@ -387,6 +387,13 @@ body {
     padding: 6px 12px;
     font-size:14px;
   }
+  .tab-p h2{
+    font-size: 14px;
+  }
+  .nav-tabs>li{
+    text-align: center;
+    width: 100%;
+  }
 }
 @media (max-width: 991px) {
   .navbar-header {
